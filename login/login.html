@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <html lang="zh-CN">
+    <title>登录界面</title>
+    <link href="login.css" type="text/css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_left">
+            <img src="../resource/containerLeft.png">
+            <p class="container_left_platform">国家知识产权运营公共服务平台</p>
+            <p class="container_left_backend">综合管理后台</p>
+            <div class="container_left_rectangle-left"></div>
+            <div class="container_left_rectangle-right"></div>
+        </div>
+        <div class="container_right">
+            <div class="container_right_center">
+                <div class="container_right_center_login">
+                    <p class="container_right_center_login_text">登录</p>
+                </div>
+                <form action="" method="post" onsubmit="return isValid()">
+                    <input id="input-telephone" type="text" name="telephone" placeholder="请输入手机号码">
+                    <p class="container_right_center_tel-alert" style="display: none;">账号不能为空</p>
+                    <div class="container_right_center_pwdBox">
+                        <input id="input-password" type="password" name="password" placeholder="请输入您的密码(6-12个字符)">
+                        <img class="container_right_center_pwdBox_pwd-eye" id="closeEye-upper" src="../resource/closeEyeUp.png">
+                        <img class="container_right_center_pwdBox_pwd-eye" id="closeEye-lower" src="../resource/closeEyeDown.png">
+                        <img class="container_right_center_pwdBox_pwd-eye" id="openEye" style="display: none;" src="../resource/openEye.png">
+                    </div>
+                    <p class="container_right_center_pwd-alert" style="display: none;">密码不能为空</p>
+                    <input id="input-submit" type="button" value="登录">
+                </form>
+                <p class="container_right_center_forget_text">忘记密码</p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

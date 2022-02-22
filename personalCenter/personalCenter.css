@@ -1,0 +1,396 @@
+@media(max-width:1200px) {
+    body {
+        width: 1200px;
+    }
+}
+
+@media(min-width:1201px) {
+    body {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F1F5F7;
+}
+
+.top {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+}
+
+.top_fold {
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.top_bar {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 48px rgba(215, 228, 233, 0.3);
+}
+
+.top_bar_text {
+    margin-left: 40px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2A425A;
+}
+
+.top_bar_right {
+    width: 241px;
+    height: 36px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-right: 94px;
+    display: flex;
+    flex-direction: row;
+}
+
+.top_bar_right_printer {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.top_bar_right_browser {
+    margin-right: 49px;
+    cursor: pointer;
+}
+
+.top_bar_right_headPortrait {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.top_bar_right_username {
+    width: 64px;
+    height: 24px;
+    margin-top: 6px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D2238;
+}
+
+.container {
+    width: 1200px;
+    margin-top: 144px;
+    margin-bottom: 40px;
+}
+
+.container_tab {
+    width: 1200px;
+    height: 52px;
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+    background: #E2EBEE;
+    border-radius: 8px;
+}
+
+#personalData {
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    z-index: 2;
+    cursor: pointer;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #9BA6B2;
+}
+
+#managePassword {
+    margin-left: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    z-index: 2;
+    cursor: pointer;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #9BA6B2;
+}
+
+.container_data {
+    width: 1200px;
+    height: 882px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.container_password {
+    display: none;
+    width: 1200px;
+    height: 506px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.container_data_title {
+    padding-left: 60px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    width: 64px;
+    height: 24px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A425A;
+}
+
+.container_password_title {
+    padding-left: 60px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    width: 64px;
+    height: 24px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A425A;
+}
+
+.container_data_rectangle {
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 1px;
+    align-items: center;
+    background: #EBF1F7;
+}
+
+.container_password_rectangle {
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 1px;
+    align-items: center;
+    background: #EBF1F7;
+}
+
+.container_data_form {
+    width: 1200px;
+    height: 818px;
+    margin: 0;
+    padding-top: 8px;
+}
+
+.container_password_form {
+    width: 1200px;
+    height: 442px;
+    margin: 0;
+    padding-top: 8px;
+}
+
+form p {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    margin-left: 60px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #9BA6B2;
+}
+
+input {
+    height: 40px;
+    margin-left: 60px;
+    padding-left: 16px;
+    vertical-align: middle;
+    background: #F4F7F9;
+    border: 1px solid #EBF1F7;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #9BA6B2;
+}
+
+#form_account, #form_name, #form_role, #form_registrationTime, #form_recentLogin {
+    width: 262px;
+}
+
+#form_company, #form_program, .container_password_form_original, .container_password_form_new, .container_password_form_confirm {
+    width: 540px;
+}
+
+
+
+#form_account_change {
+    margin-left: 16px;
+    width: 56px;
+    cursor: pointer;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #05BBC9;
+}
+
+#form_box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.container_password_form_box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#form_submit {
+    width: 104px;
+    height: 40px;
+    margin-top: 40px;
+    padding: 9px 24px;
+    cursor: pointer;
+    background: #05BBC9;
+    border-radius: 65px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container_password_form_submit {
+    width: 76px;
+    height: 40px;
+    margin-top: 40px;
+    padding: 9px 24px;
+    cursor: pointer;
+    background: #05BBC9;
+    border-radius: 65px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#form_cancle {
+    width: 76px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #F4F7F9;
+    border-radius: 65px;
+    border: 1px solid transparent;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #9BA6B2;
+}
+
+.container_password_form_cancle {
+    width: 76px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #F4F7F9;
+    border-radius: 65px;
+    border: 1px solid transparent;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #9BA6B2;
+}
+
+#popup {
+    position: fixed;
+    display: none;
+    top: 64px;
+    width: 1200px;
+    height: 670px;
+    z-index: 4;
+    box-shadow: 1px 1px 1px 500px rgba(13, 34, 56, 0.2);
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+#popup:target {
+    display: block;
+}
+
+.selected {
+    color: #2A425A !important;
+}
+
+
+.personalData-box {
+    position: absolute;
+    width: 88px;
+    height: 36px;
+    left: 8px;
+    top: 8px;
+    z-index: 1;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(192, 213, 220, 0.6);
+    border-radius: 8px;
+}
+
+.managePassword-box {
+    position: absolute;
+    width: 88px;
+    height: 36px;
+    left: 104px;
+    top: 8px;
+    z-index: 1;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(192, 213, 220, 0.6);
+    border-radius: 8px;
+}

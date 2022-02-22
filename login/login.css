@@ -1,0 +1,240 @@
+@media (max-height:960px) {
+    .container_left {
+        float: left;
+        width: 620px;
+        height: 960px;
+    }
+
+    .container_right {
+        height: 960px;
+    }
+}
+
+@media(min-height:961px) {
+    .container_left {
+        float: left;
+        width: 620px;
+        height: 100%;
+    }
+
+    .container_right {
+        height: 100%;
+    }
+}
+
+@media(max-width:1200px) {
+    .container_right {
+        margin-left: 620px;
+        width: 580px;
+    }
+}
+
+@media(min-width:1201px) {
+    .container_right {
+        margin-left: 620px;
+    }
+}
+body{
+    margin: 0;
+}
+
+.container_left {
+    position: relative;
+    background: rgba(5, 187, 201, .06);
+}
+
+.container_left img {
+    position: relative;
+    width: 68.2%;
+    height: 48.4%;
+    left: 15.3%;
+    top: 21.3%;
+}
+
+.container_left_platform {
+    position: absolute;
+    margin: 0 auto;
+    top: 77.8%;
+    left: 28.2%;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: .08em;
+    color: #05BBC9;
+}
+
+.container_left_backend {
+    position: absolute;
+    top: 80.9%;
+    left: 38%;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: .04em;
+    color: #9BA6B2;
+}
+
+.container_left_rectangle-left {
+    position: absolute;
+    top: 78.9%;
+    left: 8.9%;
+    width: 104.22px;
+    height: 1.85px;
+    background: linear-gradient(89.99deg, #05BBC9 .01%, #FFFFFF 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.container_left_rectangle-right {
+    position: absolute;
+    top: 78.9%;
+    right: 8.7%;
+    width: 104.22px;
+    height: 1.85px;
+    background: linear-gradient(89.99deg, #05BBC9 .01%, #FFFFFF 100%);
+}
+
+
+.container_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_right_center {
+    width: 400px;
+    height: 342px;
+}
+
+.container_right_center_login {
+    width: 400px;
+    height: 40px;
+}
+
+.container_right_center_login_text {
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #2A425A;
+}
+
+input {
+    padding-left: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+input::placeholder {
+    padding: 0;
+    height: 22px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #9BA6B2;
+}
+
+#input-telephone {
+    width: 400px;
+    height: 48px;
+    margin-top: 48px;
+    background: #F4F7F9;
+    border: 1px solid #EBF1F7;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.container_right_center_tel-alert {
+    width: 84px;
+    height: 22px;
+    margin-top: 10px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FF3629;
+}
+
+.container_right_center_pwdBox {
+    position: relative;
+    margin-top: 16px;
+}
+
+#input-password {
+    width: 400px;
+    height: 48px;
+    background: #F4F7F9;
+    border: 1px solid #EBF1F7;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#closeEye-upper {
+    position: absolute;
+    top: 20.67px;
+    left: 366.83px;
+}
+
+#closeEye-lower {
+    position: absolute;
+    top: 22.85px;
+    left: 367.76px;
+}
+
+#openEye {
+    position: absolute;
+    top: 17.33px;
+    left: 366.83px;
+}
+
+.container_right_center_pwd-alert {
+    width: 84px;
+    height: 22px;
+    margin-top: 10px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FF3629;
+}
+
+#input-submit {
+    width: 400px;
+    height: 48px;
+    margin-top: 46px;
+    cursor: pointer;
+    background: #05BBC9;
+    border-radius: 4px;
+    border: #05BBC9;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container_right_center_forget_text {
+    width: 56px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: 344px;
+    cursor: pointer;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #9BA6B2;
+}

@@ -1,0 +1,341 @@
+.container_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_right_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.container_right_center {
+    width: 568px;
+    height: 490px;
+}
+
+.container_right_center_forget {
+    width: 568px;
+    height: 40px;
+    margin-top: 94px;
+}
+
+.container_right_center_forget_text {
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #2A425A;
+}
+
+.container_right_center_number {
+    margin-top: 70px;
+    width: 568px;
+    height: 74px;
+}
+
+#popup form {
+    width: 400px;
+    height: 216px;
+    margin-top: 90px;
+    margin-left: 84px;
+}
+
+#stepOne_telephone, #stepTwo_telephone {
+    width: 400px;
+    height: 48px;
+    margin: 0;
+    background: #F4F7F9;
+    border: 1px solid #EBF1F7;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input {
+    padding-left: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+input::placeholder {
+    padding: 0;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #9BA6B2;
+}
+
+
+#codeBox {
+    margin-top: 16px;
+    width: 400px;
+    height: 48px;
+}
+
+#stepOne_code,#stepTwo_code {
+    width: 274px;
+    height: 48px;
+    margin: 0;
+    background: #F4F7F9;
+    border: 1px solid #EBF1F7;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+#stepOne_sendCode, #stepTwo_sendCode {
+    width: 110px;
+    height: 48px;
+    float: right;
+    cursor: pointer;
+    background: #05BBC9;
+    border-color: #05BBC9;
+    border-radius: 4px;
+    border: 1px solid #05BBC9;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container_right_center_submit {
+    width: 400px;
+    height: 48px;
+    margin-top: 56px;
+    margin-left: 0;
+    cursor: pointer;
+    background: #05BBC9;
+    border-color: #05BBC9;
+    border: 1px solid #05BBC9;
+    border-radius: 4px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.container_right_center_alert {
+    width: 184px;
+    height: 22px;
+    margin-left: 0;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FF3629;
+}
+
+.container_right_center_stepThree {
+    width: 400px;
+    height: 216px;
+    margin-top: 90px;
+    margin-left: 84px;
+}
+
+.container_right_center_stepThree_login {
+    width: 149px;
+    height: 96px;
+    margin: 0 auto;
+}
+
+.container_right_center_stepThree_login_img {
+    width: 56px;
+    height: 56px;
+    margin-left: 46px;
+    background: #52C41A;
+    border-radius: 81px;
+}
+
+.container_right_center_stepThree_login_text {
+    margin-top: 16px;
+    width: 149px;
+    height: 24px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #9BA6B2;
+}
+
+.container_right_center_stepThree_login_btn {
+    width: 400px;
+    height: 48px;
+    margin: 72px auto;
+    border: 1px solid #05BBC9;
+    background: #05BBC9;
+    border-radius: 4px;
+    border-color: #05BBC9;
+    cursor: pointer;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container_right_center_number_line {
+    position: absolute;
+    width: 500px;
+    height: 2px;
+    margin-top: 19px;
+    margin-left: 43px;
+    margin-right: 25px;
+    background: #D7E4E9;
+    border-radius: 6px;
+}
+
+.container_right_center_number_circle-left {
+    position: absolute;
+    margin-left: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #05BBC9;
+    box-sizing: border-box;
+    border-radius: 27px;
+}
+
+.container_right_center_number_circle-left p {
+    width: 12px;
+    height: 28px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #05BBC9;
+}
+
+.container_right_center_number_circle-middle {
+    position: absolute;
+    margin-left: 264px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #05BBC9;
+    box-sizing: border-box;
+    border-radius: 27px;
+}
+
+.container_right_center_number_circle-middle p {
+    width: 12px;
+    height: 28px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.container_right_center_number_circle-right {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 516px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #05BBC9;
+    box-sizing: border-box;
+    border-radius: 27px;
+}
+
+.container_right_center_number_circle-right p {
+    width: 12px;
+    height: 28px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.container_right_center_number_circle-left-text {
+    position: absolute;
+    width: 64px;
+    height: 24px;
+    margin-top: 50px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #2A425A;
+}
+
+.container_right_center_number_circle-middle-text {
+    position: absolute;
+    width: 80px;
+    height: 24px;
+    margin-top: 50px;
+    margin-left: 244px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #2A425A;
+}
+
+.container_right_center_number_circle-right-text {
+    position: absolute;
+    width: 64px;
+    height: 24px;
+    margin-top: 50px;
+    margin-left: 504px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #2A425A;
+}
+
+.circle {
+    border: 2px solid #D7E4E9;
+}
+
+.number {
+    color: #D7E4E9;
+}
+
+.nextNumber {
+    color: #05BBC9;
+}
+
+.text {
+    color: #9BA6B2;
+}
+
+.gray{
+    background: #F4F7F9 !important;
+    border: 0 !important;
+    color: #9BA6B2 !important;
+}

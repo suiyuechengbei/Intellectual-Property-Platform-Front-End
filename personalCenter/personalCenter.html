@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <html lang="zh-CN">
+    <title>个人中心</title>
+    <link href="personalCenter.css" type="text/css" rel="stylesheet">
+    <link href="../common/common.css" type="text/css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="top">
+        <img class="top_fold" src="../resource/fold.png">
+        <div class="top_bar">
+            <p class="top_bar_text">国家知识产权运营公共服务平台西安试点平台</p>
+            <div class="top_bar_right">
+                <img class="top_bar_right_printer" src="../resource/printer.png">
+                <img class="top_bar_right_browser" src="../resource/browser.png">
+                <img class="top_bar_right_headPortrait" src="../resource/headPortrait.png">
+                <div class="top_bar_right_username"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_tab">
+            <div class="userInfo personalData-box"></div>
+            <div id="personalData">个人资料</div>
+            <div class="userPwd managePassword-box"></div>
+            <div id="managePassword">密码管理</div>
+        </div>
+        <div class="userInfo container_data">
+            <div class="container_data_title">基本信息</div>
+            <div class="container_data_rectangle"></div>
+            <form class="container_data_form" action="" method="get" onsubmit="return isValid()">
+                <p id="form_acount_text">账号</p>
+                <input id="form_account" type="tel" placeholder="手机号">
+                <a id="form_account_change" href="#popup">更换手机</a>
+                <p id="form_name_text">姓名</p>
+                <input id="form_name" type="text" placeholder="姓名">
+                <p id="form_company_text">单位名称</p>
+                <input id="form_company" type="text" placeholder="单位名称">
+                <p id="form_role_text">角色</p>
+                <input id="form_role" type="text" placeholder="管理员">
+                <p id="form_program_text">管理项目</p>
+                <input id="form_program" type="text" placeholder="门户网站、数据可视化、专利搜索引擎、专利地理信息定位">
+                <p id="form_registrationTime_text">注册时间</p>
+                <input id="form_registrationTime" type="text" placeholder="2020-05-23 12:28:06">
+                <p id="form_recentLogin_text">最近登录</p>
+                <input id="form_recentLogin" type="text" placeholder="2021-01-23 12:36:02">
+                <div id="form_box">
+                    <input id="form_submit" type="submit" value="更新资料">
+                    <button id="form_cancle">取消</button>
+                </div>
+            </form>
+        </div>
+        <div class="userPwd container_password">
+            <div class="container_password_title">修改密码</div>
+            <div class="container_password_rectangle"></div>
+            <form class="container_password_form" action="" method="get" onsubmit="return isValid()">
+                <p>原密码</p>
+                <input id="form_original" class="container_password_form_original" type="password" placeholder="请输入原密码">
+                <p>新密码</p>
+                <input id="form_new" class="container_password_form_new" type="password" placeholder="请输入新密码">
+                <p>确认新密码</p>
+                <input id="form_confirm" class="container_password_form_confirm" type="password" placeholder="请再次输入新密码">
+                <div class="container_password_form_box">
+                    <input id="password_submit" class="container_password_form_submit" type="submit" value="确认">
+                    <button class="container_password_form_cancle">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="popup">
+        <div class="container_right">
+            <img class="container_right_close" src="../resource/close.png">
+            <div class="container_right_center">
+                <div class="container_right_center_forget">
+                    <p class="container_right_center_forget_text">更换手机号码</p>
+                </div>
+                <div class="container_right_center_number">
+                    <div class="container_right_center_number_line"></div>
+                    <div class="container_right_center_number_circle-left">
+                        <p>1</p>
+                    </div>
+                    <div class="container_right_center_number_circle-middle">
+                        <p id="number-middle">2</p>
+                    </div>
+                    <div class="container_right_center_number_circle-right">
+                        <p id="number-right">3</p>
+                    </div>
+                    <p class="container_right_center_number_circle-left-text">验证账号</p>
+                    <p class="container_right_center_number_circle-middle-text">绑定新手机</p>
+                    <p class="container_right_center_number_circle-right-text">完成绑定</p>
+                </div>
+                <form class="container_right_center_stepOne" target="hidden" method="get" onsubmit="return isValid()">
+                    <input id="stepOne_telephone" type="text" name="telephone" placeholder="请输入手机号码">
+                    <div id="codeBox">
+                        <input id="stepOne_code" type="text" name="code" placeholder="请输入验证码">
+                        <button id="stepOne_sendCode">发送验证码</button>
+                    </div>
+                    <p class="container_right_center_alert"></p>
+                    <input id="stepOne_submit" class="container_right_center_submit" type="submit" value="下一步">
+                </form>
+                <form class="container_right_center_stepTwo" target="hidden" method="get" onsubmit="return isValid()">
+                    <input id="stepTwo_telephone" type="text" name="telephone" placeholder="请输入新手机号码">
+                    <div id="codeBox">
+                        <input id="stepTwo_code" type="text" name="code" placeholder="请输入验证码">
+                        <button id="stepTwo_sendCode">发送验证码</button>
+                    </div>
+                    <p class="container_right_center_alert"></p>
+                    <input class="container_right_center_submit" type="submit" value="下一步">
+                </form>
+                <iframe name="hidden" style="display: none;"></iframe>
+                <div class="container_right_center_stepThree" style="display: none;">
+                    <div class="container_right_center_stepThree_login">
+                        <img class="container_right_center_stepThree_login_img" src="../resource/success.png">
+                        <p class="container_right_center_stepThree_login_text">设置成功,快去登录吧</p>
+                    </div>
+                    <button class="container_right_center_stepThree_login_btn">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="personalCenter.js"></script>
+    <script src="../common/common.js"></script>
+</body>
+
+</html>
