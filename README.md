@@ -1,5 +1,5 @@
 # Intellectual-Property-Platform-Front-End
-本项目为前端代码实现。  
+本项目为前端部分代码实现。  
 前后端通过ajax交互通信，包括注册登录、短信验证、获取用户信息、更新个人资料、修改密码、绑定新手机号码。  
 ![1 登录](https://user-images.githubusercontent.com/59349853/155118068-276f3e46-c484-4e3b-bff1-436c6ad33585.png)
 ![2找回密码](https://user-images.githubusercontent.com/59349853/155118238-cd88b0ee-54e9-40fa-9554-e0ea7bd83393.png)  
